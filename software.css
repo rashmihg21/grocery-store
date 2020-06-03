@@ -1,0 +1,25 @@
+/* .container{
+    margin: 50px;
+} */
+body{
+    background-color: lightblue;
+}
+.img{
+    width: 100%;
+    height: 300px;
+}
+footer{
+    background-color:white;
+    color:black;
+    text-align: center;
+    padding:5px;
+    font-size: 20px;
+    
+  }
+  footer a:hover{
+  color: black;
+  }
+  .copy{
+    padding:10px;
+    background-color: rgb(35, 79, 136);
+    }

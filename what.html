@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="what.css">
+    <title>What type of job</title>
+</head>
+<body ng-app="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img style="width:50px;" src="img/logo.jpg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html"><h5>Home</h5> <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="about.html"><h5>About Us </h5><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link"  href="service.html"><h5>Services </h5><span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="Blog.html"><h5>Blog</h5><span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><h5>Contact Us</h5> <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pro.html"><h5>Team </h5> <span class="sr-only"></span></a>
+              </li>
+            
+           
+          </ul>
+        </div>
+      </nav>
+    
+    <div class="row">
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-6">
+                <div class="container">
+            
+       <center> <h2>JOB Application with Resume Upload </h2></center>
+       <h4>Contact Information</h4>
+       <form action=""name="frm">
+
+     <div class="question">
+       <label for="fname"><h5>Name</h5></label>
+       <span style="color:red"ng-show="frm,name.$error.required">*</span>
+       <input type="text" id="fname" name="firstname" placeholder="Your name..">     </div>
+<br>
+     <div class="question">
+         <label for="Lname"><h5>lastName</h5></label>
+         <span style="color:red"ng-show="frm,lname.$error.required">*</span>
+         <input type="text" id="Lname" name="Lastname" placeholder="Your lname..">
+     </div>
+     <br>
+     <div class="question">
+        <label for="email"><b><h5>Email</h5></b></label>
+        <span style="color:red;" ng-show="frm.email.$error.required">*</span>
+        <span  style="color:red;"ng-show="frm.email.$error.email">Not Valid Email</span>
+         <input type="email" placeholder="enter email.." name="email" ng-model="email" id="email" class="form-control input-sm"  pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required>
+             <br> </div>
+ 
+        <div class="question">
+            <label for="Phone"><b><h5>Phone:</h5></b></label>
+            <span  style="color:red;"  ng-show="frm.Phone.$error.required">*</span>
+            <span  style="color:red;"  ng-show="frm.phone.$error.number">Enter Valid Number</span>
+            <input type="number" placeholder="Enter number" name="phone" ng-pattern="/^[7-9][0-9]{9}$/" ng-model="phone"  required>
+            <br>
+            </div>
+<br>
+
+
+
+  <label for="Job in a particular Location"><h5>Job in a particular Location</h5></label>
+  <span style="color:red"ng-show="frm,name.$error.required">*</span>
+              
+<div class="dropdown">
+                  <button onclick="myFunction()" class="btn btn-default dropdown-lg">Location</button>
+                    <span class="caret"></span></button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="#Vijaya Nagar">Vijaya Nagar</a>
+                    <a href="#RR Nagar">RR Nagar</a>
+                    <a href="#Pennya">Pennya</a>
+                    <a href="#Nagar Bavi">Nagar Bavi</a>
+                    <a href="#Electornic City">Electornic City</a>
+                    
+                  </div>
+                </div>
+<br>
+
+            <h4>Position</h4>
+        <div class="question">
+                <label for="position you are applying for"><h5>Position you are applying for</h5></label>
+                <span style="color:red"ng-show="frm,name.$error.required">*</span>
+                            
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="btn btn-default dropdown-lg">Types of job</button>
+                    <span class="caret"></span></button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="#Computer and IT">Computer and IT</a>
+                    <a href="#Advertising and Marketing">Advertising and Marketing</a>
+                    <a href="#Customer Services">Customer Services</a>
+                    <a href="#Constructer">Constructer</a>
+                    <a href="#Healthcare">Healthcare</a>
+                    
+                  </div>
+                </div>
+                
+                <script>
+                /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                function filterFunction() {
+                  var input, filter, ul, li, a, i;
+                  input = document.getElementById("myInput");
+                  filter = input.value.toUpperCase();
+                  div = document.getElementById("myDropdown");
+                  a = div.getElementsByTagName("a");
+                  for (i = 0; i < a.length; i++) {
+                    txtValue = a[i].textContent || a[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                      a[i].style.display = "";
+                    } else {
+                      a[i].style.display = "none";
+                    }
+                  }
+                }
+                </script>
+                
+           
+           
+           <br>
+                </div>
+            <div class="question">
+                    <label for="Resume Upload"><h5>Resume Upload</h5></label>
+                    <button type="button" class="btn btn-info btn-lg">choose</button>
+                    <input type="text" id="Resume Upload" name="Resume Upload" placeholder="No file chossen..">
+                </div>
+            <div class="question">
+                        <label for="Portfolio website"><h5>Portfolio website</h5></label>
+                        <input type="text" id="Portfolio website" name="Portfolio website" placeholder="Portfolio website..">
+             </div>
+
+             <div class="question">
+                            <label for="Salary requirements"><h5>Salary requirements</h5></label>
+                            <input type="text" id="Salary requirements" name="Salary requirements" >
+             </div>
+
+             <div class="question">
+                    <label for="When can you start?"><h5>When can you start?</h5></label>
+                    <input type="text" id="When can you start?" name="When can you start?" placeholder="When can you start..">
+         </div>
+    
+
+    <label for="lname"><h5>Are you willing to relocate?</h5> </label>
+          <br> 
+          <input type = "radio"
+                 name = "radSize"
+                 id = "sizeSmall"
+                 value = "small"
+                 checked = "checked" />
+          <label for = "sizeSmall"><h5>Yes</h5></label>
+          <br>
+          <input type = "radio"
+          name = "radSize"
+          id = "sizeSmall"
+          value = "small"
+          checked = "checked" />
+         <label for = "sizeSmall"><h5>No</h5></label>
+         <br>
+         <input type = "radio"
+          name = "radSize"
+          id = "sizeSmall"
+          value = "small"
+          checked = "checked" />
+         <label for = "sizeSmall"><h5>Not sure</h5></label>
+   <br>
+
+   <div class="question">
+        <label for="Last company you worked for"><h5>Last company you worked for</h5></label>
+        <input type="text" id="Last company you worked for" name="Last company you worked for" placeholder="Last company you worked for..">
+</div>
+<div class="question">
+        <label for="Comments"><h5>Comments</h5></label>
+        <textarea id="message"type="text" name="message" placeholder="Write something.." style="height:200px"></textarea>
+        
+</div>
+   <a href="signin.html"> <center><button type="button" class="btn btn-info btn-lg">Submit</button></center></a>
+</form>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+
+</div>
+</div>
+<a href="type.html"><center> <button type="button" class="btn btn-info btn-lg">Back</button> </center></a>   
+<br>
+<footer class="foot">
+    <div class="row">
+      <div class="col-lg-4">
+        <h3>WALK IN</h3>
+        <img style="width:200px;" src="img/logo.jpg" alt="logo">
+        <p></p>
+      </div>
+      <div class="col-lg-4">
+          <div class="row" style="margin-top:50px;">
+              <div class="col-sm-6">
+                  <a href="signin.html"><p>SignUp</p></a>
+                  <a href="index.html"><p>Home</p></a>
+                  <a href="about.html"><p>About Us</p></a>
+              </div>
+              <div class="col-sm-6">
+                  <a href="service.html"><p>Services</p></a>
+                  <a href="Blog.html"><p>Blog</p></a>
+                  <a href="contact.html"><p>Contact Us</p></a>
+                  <a href="pro.html"><p>Team</p></a>
+              </div>
+          </div>    
+      </div>
+      <div class="col-lg-4">
+        <p>Phone: +91-8374983748</p>
+        <p>Email: info@walkin.com</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.05130202872!2d77.53479871489891!3d12.968569090857867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dde41c9d541%3A0xdd5400ac1d9e0a9a!2sNIIT+Bangalore+Vijayanagar+Centre!5e0!3m2!1sen!2sin!4v1548324442885" width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="copy">
+      <p>&copy; Copyright 2019 <a href="index.html">Walk IN</a></p>
+    </div>
+  </footer>
+</body>
+</html>
