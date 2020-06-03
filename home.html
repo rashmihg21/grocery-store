@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    <title>grocery</title>
+    
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <!-- <a class="navbar-brand" href="index.html"><img style="width:50px;" src="img/logo.jpg" alt="logo"></a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="homes.html"><i class=" w3-large fa fa-home"></i>Homes <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="about grocery.html">About Us<span class="sr-only">(current)</span></a>
+        </li>
+        <a class="nav-link" href="contact1.html"><i class=" w3-large fa fa-envelope"></i>contact <span class="sr-only"></span></a>
+            </li>
+        <!-- <li class="nav-item "> -->
+          <ul class="navbar-nav mr-auto">
+            <div class="dropdown">
+              <button class="dropbtn">Navproduts  <i class="fa fa-caret-down"></i> </button>
+              
+             
+              <div class="dropdown-content">
+                <a href="products.html">PRODUCTS</a>
+                <a href="vegetables.html">VEGETABLES</a>
+                <a href="fruits.html">FRUITS</a>
+                <a href="cosmatics.html">COSMATICS</a>
+                <a href="utensils.html">COOKING UTENSILS</a>
+              </div>
+            </div> 
+            
+            
+            <!-- <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-shopping-cart"></span> 7 - Items<span class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-cart" role="menu">
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="image/fridg.jpg" alt="" />
+                              <span class="item-info">
+                                  <span>Fridge</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                              <button class="btn btn-xs btn-danger pull-right">x</button>
+                          </span>
+                      </span>
+                    </li>
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="image/dwaata.jpeg" alt="" />
+                              <span class="item-info">
+                                  <span>Dwaata</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                              <button class="btn btn-xs btn-danger pull-right">x</button>
+                          </span>
+                      </span>
+                    </li>
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="image/brush.jpg" alt="" />
+                              <span class="item-info">
+                                  <span>Brush</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                              <button class="btn btn-xs btn-danger pull-right">x</button>
+                          </span>
+                      </span>
+                    </li>
+                    <li>
+                        <span class="item">
+                          <span class="item-left">
+                              <img src="image/chips.jpg" alt="" />
+                              <span class="item-info">
+                                  <span>Chips</span>
+                                  <span>23$</span>
+                              </span>
+                          </span>
+                          <span class="item-right">
+                              <button class="btn btn-xs btn-danger pull-right">x</button>
+                          </span>
+                      </span>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a class="text-center" href="">View Cart</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.na -->
+            <!-- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
+          </div>
+          
+          
+          
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+         
+  </nav>
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 bg">
+          <div id="heading">
+              <center><i class="fa fa-group" style="font-size:48px;color:black"></i></center>
+             <center><h1>Admin/Employee/Customer</h1></center><br>
+             <center><h4> GROCERY STORE MANAGEMENT<br>
+            </h4></center>
+            <a href="signin.html"><center> <button type="button" class="btn btn-info btn-lg">Signin</button> </center></a>
+          </div>
+        </div>
+        <!-- <div>
+        <i class="fa fa-arrows-h" style="font-size:48px;color:black"></i>
+      </div> -->
+          <div class="col-lg-6 bg1">
+           
+            <div id="heading">
+              <center><i class="fa fa-television" style="font-size:48px;color:black"></i></center>
+              <center><h1>Customer</h1></center><br>
+              <center><h4>  GROCERY STORE MANAGEMENT</h4></center>
+              <a href="what.html"> <center> <button type="button" class="btn btn-info btn-lg">Register </button> </center></a>
+          </div>
+          </div>
+        
+      </div>  
+    </div> 
+    <script>
+    </script>
+       <footer class="foot">
+        <div class="row">
+          <div class="col-lg-4">
+            <h3>grocery store</h3>
+            <img style="width:200px;" src="image/g4.png" > 
+            
+          </div> 
+          <div class="col-lg-4">
+              <div class="row" style="margin-top:50px;">
+                  <div class="col-sm-6">
+                      <a href="signin.html"><p>SignUp</p></a>
+                      <a href="home.html"><p>Home</p></a>
+                      <a href="about.html"><p>About Us</p></a>
+                  </div> 
+                  <div class="col-sm-6">
+                      <a href="all products.html"><p>all</p></a>
+                      <a href="Blog.html"><p>Blog</p></a>
+                      <a href="contact.html"><p>Contact Us</p></a>
+                      <!-- <a href="pro.html"><p>person</p></a> -->
+                  </div>
+              </div>    
+          </div>
+          <div class="col-lg-4">
+            <p>+91-8374983748</p>
+            <p>info@grocery.com</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.05130202872!2d77.53479871489891!3d12.968569090857867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dde41c9d541%3A0xdd5400ac1d9e0a9a!2sNIIT+Bangalore+Vijayanagar+Centre!5e0!3m2!1sen!2sin!4v1548324442885" width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="copy">
+          <p>&copy; Copyright 2019 <a href="home.html">grocery store</a></p>
+        </div>
+      </footer>
+</body>
+</html>
