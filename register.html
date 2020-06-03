@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Register</title>
+</head>
+<body ng-app="">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <!-- <a class="navbar-brand" href="index.html"><img style="width:50px;" src="img/logo.jpg" alt="logo"></a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="home.html"><h5>Home</h5> <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="about grocery.html"><h5>About Us </h5><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          
+            <div class="dropdown">
+              <button class="dropbtn"><h5>Navproduts</h5>  <i class="fa fa-caret-down"></i> </button>
+              
+             
+              <div class="dropdown-content">
+                <a href="products.html">PRODUCTS</a>
+                <a href="vegetables.html">VEGETABLES</a>
+                <a href="fruits.html">FRUITS</a>
+                <a href="cosmatics.html">COSMATICS</a>
+                <a href="utensils.html">COOKING UTENSILS</a>
+              </div>
+            </div> 
+            
+            <li class="nav-item">
+              <a class="nav-link" href="contact1.html"><h5>Contact Us</h5> <span class="sr-only"></span></a>
+            </li>
+           
+            <!-- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
+          </div>
+          
+          
+          
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+         
+  </nav>
+  <div class="row">
+    <div class="col-lg-4">
+      
+    </div>
+    <div class="col-lg-4">
+        <div class="container">  
+         <center> <h1>Register</h1></center>
+         <form action="" method="POST" name="frm">
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          
+      <br>
+      
+          <label for="email"><b>Email</b></label>
+          
+          <span style="color: red;"ng-show="frm.email.$error.required">*</span>
+          <span style="color: red;"ng-show="frm.email.$error.email">not a valid </span>
+          <input type="email"placeholder=" enter the email"Name="email" ng-model="email"id="email" class="form-control input-sm"ng-pattern="^[a-ZA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"required>
+          <br>
+          
+
+          <label for="password"><b>Password</b></label>
+          <span style="color: red;"ng-show="frm.password.$error.required">* (min-6,max-10)</span>
+          <span ng-show="frm.password.$error.minlength">too short!</span>
+          <span ng-show="frm.password.$error.maxlength">too long!</span>
+          <input type="password" placeholder="Enter Password" name="password"ng-model="password" id="password"class="form-control input-sm" ng-minlength="6"ng-maxlength="10"required>
+
+          
+      
+  
+         
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+          
+          <p>Already have an account? <a href="signin.html" style="color:dodgerblue">signin</a>.</p>
+      
+          <div class="clearfix">
+           
+            <a href="login.html"><button type="submit" onclick="validate()" class="signupbtn">Sign Up</button></a>
+          </form>
+          </div>
+        
+        </div>
+        <div class="col-lg-4"></div>
+        </div>
+      </div>   
+      <footer class="foot">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3>grocery store</h3>
+              <img style="width:200px;" src="image/g4.png" alt="Grocery store">
+              <p></p>
+            </div>
+            <div class="col-lg-4">
+                <div class="row" style="margin-top:50px;">
+                    <div class="col-sm-6">
+                        <a href="signin.html"><p>SignUp</p></a>
+                        <a href="home.html"><p>Home</p></a>
+                        <a href="about grocery.html"><p>About Us</p></a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="navproduct.html"><p>Navproduts</p></a>
+                       
+                        <a href="contact.html"><p>Contact Us</p></a>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-4">
+              <p>+91-8374983748</p>
+              <p>info@walkin.com</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.05130202872!2d77.53479871489891!3d12.968569090857867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dde41c9d541%3A0xdd5400ac1d9e0a9a!2sNIIT+Bangalore+Vijayanagar+Centre!5e0!3m2!1sen!2sin!4v1548324442885" width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="copy">
+            <p>&copy; Copyright 2019 <a href="home.html">Grocery store</a></p>
+          </div>
+        </footer>   
+
+        <script>
+        function validate(){
+            var pass = document.getElementById("password").value;
+            var cpass = document.getElementById("confirmpassword").value;
+            if(pass != cpass){
+              alert('Password and Confirm Password doesnot match');
+            }
+            Console.log(pass);
+            
+        }
+        
+        </script>
+</body>
+</html>
