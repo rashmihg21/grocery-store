@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+    box-sizing: border-box;
+    
+}
+
+
+
+.service-section{
+    background: url(jobpic6.jpeg);
+    background-size: cover;
+    padding: 60px 0;
+
+
+}
+
+.inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.section-title{
+    text-align: center;
+    color:black;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.border{
+    width: 180px;
+    height: 2px;
+    background:black;
+    margin: 40px auto;
+}
+
+.service-container{                            
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.service-box{
+    max-width: 30.33%;
+    padding: 10px;
+    text-align: center;
+    /* color:black; */
+    cursor: pointer;
+    background-color:#fff;
+    border: none;
+    /* color:black; */
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
+ 
+}
+
+.service-icon{
+    display: inline-table;
+    width: 100px;
+    height: 60px;
+    border: 3px solid black;
+    color:black;
+    transform: rotate(180deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition:0.3s linear;
+}
+
+.service-icon i{
+    line-height: 70px;
+    transform: rotate(-360deg);
+    font-size: 26px;
+}
+
+.service-icon:hover{
+    transform: scale(1.8);
+    box-shadow: 0 0 25px black;
+
+
+}
+
+.service-icon .service-icon:hover{
+    color:#FF0000;
+    box-shadow:0 0 10px #FF0000;
+    text-shadow: 0 0 10px #FF0000;
+}
+    
+
+   
+
+    
+
+
+.service-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    
+       
+}
+
+.service-disc{
+font-size: 14px;
+
+}
+body{
+    background-color: lightblue;
+}
+
+@media screen and (max-width:480px){
+    .service-box{
+        max-width: 100%;
+    }
+}
+footer{
+    background-color:white;
+    color:black;
+    text-align: center;
+    padding:5px;
+    font-size: 20px;
+    
+  }
+  footer a:hover{
+  color: black;
+  }
+  .copy{
+    padding:10px;
+    background-color: rgb(35, 79, 136);
+    }
+
+
+
+
+
+
+
+
+  
+
+
+

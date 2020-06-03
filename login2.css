@@ -1,0 +1,71 @@
+body {font-family: Arial, Helvetica, sans-serif;
+  background: url('img/hs.jpg') no-repeat;
+  background-size: cover;
+  }
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+  
+/* Full-width input fields */
+input[type=text], input[type=password] ,select,textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email], input[type=password] ,select,textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.container{
+  margin:70px;
+  border-radius: 5px;
+  background-color:white;
+  padding: 20px;
+  box-shadow: 9px 15px 8px 7px rgba(0,0,0,0.53);
+}
+body{
+  background-color: #008CBA;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  background-color: aqua;
+}
+
+/* Extra styles for the cancel button */
+
+.loginbtn{
+  padding: 5px 5px;
+  background-color:#4CAF50 ;
+}
+/* Float cancel and signup buttons and add an equal width */
+ .loginbtn {
+  float: left;
+  width: 100%;
+}
+footer{
+  background-color:white;
+  color:black;
+  text-align: center;
+  padding:5px;
+  font-size: 20px;
+  
+}
+footer a:hover{
+color: black;
+}
+.copy{
+  padding:10px;
+  background-color: rgb(35, 79, 136);
+  }
