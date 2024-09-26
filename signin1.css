@@ -1,0 +1,123 @@
+
+body {font-family: Arial, Helvetica, sans-serif;
+background: url('img/hs.jpg') no-repeat;
+background-size: cover;
+}
+* {box-sizing: border-box}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] ,select,textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  resize: vertical;
+}
+input[type=email], input[type=password] ,select,textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  resize: vertical;
+}
+input[type=number], input[type=password] ,select,textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  resize: vertical;
+}
+.container{
+  margin:70px;
+  border-radius: 5px;
+  background-color:white;
+  padding: 20px;
+  box-shadow: 9px 15px 8px 7px rgba(0,0,0,0.53);
+}
+body{
+  background-color:aqua;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  background-color: aqua;
+}
+
+/* Set a style for all buttons */
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.button:hover {
+  opacity:2;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 5px 5px;
+  background-color: #4CAF50;
+}
+.signupbtn{
+  padding: 5px 5px;
+  background-color:#4CAF50 ;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 100%;
+}
+
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+footer{
+  background-color:white;
+  color:black;
+  text-align: center;
+  padding:5px;
+  font-size: 20px;
+  
+}
+footer a:hover{
+color: black;
+}
+.copy{
+  padding:10px;
+  background-color: rgb(35, 79, 136);
+  }
